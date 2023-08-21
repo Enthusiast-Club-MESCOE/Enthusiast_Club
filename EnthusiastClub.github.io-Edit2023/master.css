@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+.img-thumbnail {
+  padding: .25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: .25rem;
+  max-width: 100%;
+  height: auto;
+}
+ .social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.About {
+  position: relative;
+  font-size: 2.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 1em, 1em, 1em, 1em;
+  padding: .25rem;
+}
+.desg {
+  color: #fff !important;
+  ;
+}
+.on-carousel {
+  position: absolute;
+  margin-top: 12%;
+  margin-left: 29%;
+  z-index: 2;
+  font-size: 12vw;
+  color: white;
+  text-align: center;
+  font-family: 'Tangerine';
+  align-items: center;
+}
+
+i.fa.fa-heart {
+  color: #dc0e0e;
+}
+.navbar {
+  color: var(--nav-text);
+}
+.navbar {
+  background-color: black;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+/*
+ Main page background 
+body {
+    background-image: linear-gradient(to right, red, blue);
+}
+
+/* Navbar */
+/* Navbar 
+.navbar {
+  background: none;
+  border-bottom: 2px solid rgba(0, 255, 170, 0.5);  
+}
+
+.navbar-brand {
+  color: rgba(0, 255, 170, 0.8);
+}
+
+.nav-link {
+  color: rgba(255,255,255,0.8);
+}
+/* Headi  
+h1, h2 {
+  color: #0fa;
+  text-shadow: 0 0 10px #0fa;
+}
+
+/* Buttons 
+.btn-primary {
+  background: black;
+  border: 2px solid #0fa;
+  color: #0fa;
+  box-shadow: 0 0 20px #0fa;
+} 
+
+/* Card images 
+.card-img-top {
+  filter: grayscale(100%);
+  transition: 500ms filter;
+}
+
+.card:hover .card-img-top {
+  filter: grayscale(0);
+}
+
+/* SVG icon 
+svg#freepik_stories-team-work {
+  filter: drop-shadow(0 0 10px #0fa);
+}
+
+/* Footer 
+footer {
+  background: black;
+  color: white;
+  border-top: 2px solid #0fa;
+}
+
+footer a {
+  color: white;
+}
+
+footer .fa-heart {
+  color: red;
+}
+/* Card hover effect 
+.team-member:hover {
+  background: linear-gradient(to bottom, #0fa, transparent);
+}
+
+/* Ex-core committee label  
+.ex-committee {
+  background: #272727;
+  color: #0fa;
+}
+
+/* Social icons 
+.social-link {
+  color: #fff;
+  text-shadow: 0 0 5px #0fa;
+}
+
+.social-link:hover {
+  text-shadow: 0 0 10px #0fa; 
+}
+#section1, #section2 {
+  display: none; 
+}
+.dropdown-header {
+  color: #007bff;
+  font-size: 1.2em; 
+}
+/* Card 
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px #ddd;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px #ddd;
+  transform: translateY(-5px);
+}
+
+/* Image 
+.card-img-top {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* Content 
+.card-body {
+  padding: 20px;
+} 
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  color: #777;
+  font-size: 14px;
+}
+
+/* Social Links 
+.social-link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #ddd;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+}
+
+.social-link:hover {
+  background: #007bff;
+}
+.card {
+  margin: 0 auto;
+  max-width: 18rem;
+}
+.parent {
+  display: flex;
+  justify-content: center;
+}
+.top-card {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.row {
+  position: relative;
+}
+
+.left-card, 
+.right-card {
+  position: absolute;
+  top: 50%;
+}
+
+.left-card {
+  left: 0;
+}
+
+.right-card {
+  right: 0; 
+} 
+*/
+/* Add padding to sections */
+.container {
+  padding: 40px; 
+}
+
+/* Center headings */
+h2 {
+  text-align: center;
+}
+h4 {
+  text-align: center;
+  color: black;
+}
+
+/* Style navbar */
+.navbar {
+  background-color: black;
+  position: static
+}
+
+.navbar a {
+  color: white;  
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add styling to buttons */
+.btn {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+/* Style blockquote */
+blockquote {
+  font-style: italic;
+  color: black;
+}
+
+/* Add borders and padding to card */  
+
+
+/* Style footer */
+footer {
+  background-color: white;
+  color: white;
+  padding: 20px;
+} 
+
+footer {
+  background: black;
+  color: #fff;
+  padding: 30px 0;
+}
+
+footer p,
+footer a {
+  color: #fff;
+}
+
+footer h5 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.social-link i {
+  font-size: 32px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-top {
+  height: auto;
+  flex: 1 0 auto;  
+}
+.footer-logo {
+  height: 100px;
+  width: auto;
+  margin-bottom: 10px;
+}

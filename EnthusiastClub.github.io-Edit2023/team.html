@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link id='favicon' rel="shortcut icon" href="EnthusiastLogo.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Team Section</title>
+    <style>
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/* Target specific elements */
+.navbar-brand, 
+.nav-link {
+  color: white;
+}
+
+/* Use CSS variables */
+:root {
+  --nav-text: white;
+}
+
+.navbar {
+  color: var(--nav-text);
+}
+.navbar {
+  background-color: black;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary: #007bff;
+  --secondary: #9b529e;
+  
+}
+h1 {
+  color: black;
+}
+.text-muted {
+  color: #000;
+}
+/* Solid color */
+
+
+/* Gradient */
+
+.card-img-top{
+  border-radius: 50%;
+  height: 250px !important;
+  width: 250px !important;
+  position: relative;
+  left: 80px;
+  top: -80px;
+  object-fit: cover;
+}
+.card{
+  border-radius: 0;
+  cursor: pointer;
+  margin-top: 100px !important;
+}
+.card:hover{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+.card-body{
+  margin-top: -50px;
+}
+.bi{
+  font-size: 25px;
+}
+@media only screen and (max-width: 600px) {
+  .card-img-top{
+      
+      left: 48px !important;
+     
+  }
+}
+footer {
+  background-color: white;
+  color: white;
+  padding: 20px;
+} 
+
+footer {
+  background: black;
+  color: #fff;
+  padding: 30px 0;
+}
+
+footer p,
+footer a {
+  color: #fff;
+}
+
+footer h5 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.social-link i {
+  font-size: 32px;
+}
+.card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+.card-img-top {
+  height: auto;
+  flex: 1 0 auto;  
+}
+
+.btn {
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+.footer-logo {
+  height: 100px;
+  width: auto;
+  margin-bottom: 10px;
+}
+body {
+  background: radial-gradient(circle, #33b7e2, #5e62b0, #dc307c);
+}
+.black-heading {
+  color: black;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+.techy-btn {
+  background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;  
+}
+
+.techy-btn span {
+  position: relative; 
+  z-index: 1;
+}
+
+.techy-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+}
+
+.techy-btn:hover {
+  background-position: left bottom; 
+  color: white;
+}
+
+.techy-btn:hover::before {
+  transform: translateX(0);
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+  }
+  
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  }
+}
+
+.techy-btn:hover {
+  animation: pulse 1s;
+}
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black text-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="EnthusiastLogo.png" width='30' height='30' alt="logo"> Enthusiast Club
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse justify-content-end" id="navbarColor03">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container text-center py-5">
+      
+        <h1>Meet Our Team</h1>
+        <br>
+        <h2 class="black-heading">Faculty </h2>        
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+          <div class="row">
+            <div class="col">
+              <div class="parent">
+              <div class="card">
+                <img src="https://ik.imagekit.io/gxwsgndgi/Enthusiast_Club/Yogita_mam_c147Lb5cA?updatedAt=1692639440938" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Yogita Ajgar</h5>
+                  <p class="card-text">Faculty Coordinator</p>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                  <!--  <i class="bi bi-envelope-fill"></i> -->
+                  <!--  <i class="bi bi-whatsapp"></i> -->
+                </div>
+                </div>
+              </div>  
+              </div>
+            </div>
+          </div>
+        <h2 class="black-heading">Executive Team</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+            <div class="col">
+              <div class="card">
+                <img src="https://ik.imagekit.io/gxwsgndgi/Enthusiast_Club/Sufiyan.jpg?updatedAt=1692633091716" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sufiyan Sheikh</h5>
+                  <p class="card-text">President</p>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-envelope-fill"></i>
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://ik.imagekit.io/gxwsgndgi/Oum.jpg?updatedAt=1681658216065" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Oum Zarkar</h5>
+                  <p class="card-text">Vice President</p>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-envelope-fill"></i>
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://ik.imagekit.io/gxwsgndgi/Enthusiast_Club/Shanteshwari.jpg?updatedAt=1692633091633" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Shanteshwari Majage</h5>
+                  <p class="card-text">Treasurer</p>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-envelope-fill"></i>
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+              </div>
+            </div>
+         
+          </div>
+          <h2 class="black-heading">Social Media Team</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+            <div class="col">
+              <div class="card">
+                <img src="https://ik.imagekit.io/gxwsgndgi/Enthusiast_Club/Pratik.jpg?updatedAt=1692633089475" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pratik Walunj</h5>
+                  <p class="card-text">Social Media Head</p>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-envelope-fill"></i>
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://ik.imagekit.io/gxwsgndgi/Enthusiast_Club/Komal.jpg?updatedAt=1692633089478" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Komal Kadnor</h5>
+                  <p class="card-text">Social Media Coordinator</p>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-envelope-fill"></i>
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://ik.imagekit.io/gxwsgndgi/Enthusiast_Club/Darshal.jpg?updatedAt=1692633089013" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Darshal Barapatre</h5>
+                  <p class="card-text">Social Media Coordinator</p>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-envelope-fill"></i>
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+              </div>
+            </div>
+         
+          </div>
+          <h2 class="black-heading">Event Management Team</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+            <div class="col">
+              <div class="card">
+                <img src="https://ik.imagekit.io/gxwsgndgi/Enthusiast_Club/Dheyaraj.jpg?updatedAt=1692633089053" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dheyaraj Kavar</h5>
+                  <p class="card-text">Event Management Head</p>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-envelope-fill"></i>
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://ik.imagekit.io/gxwsgndgi/Enthusiast_Club/Kshipra.jpg?updatedAt=1692633089220" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Kshipra Wasnik</h5>
+                  <p class="card-text">Event Management Coordinator</p>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-envelope-fill"></i>
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://ik.imagekit.io/gxwsgndgi/Enthusiast_Club/Tanishq.jpg?updatedAt=1692633092231" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tanishq Waghmare</h5>
+                  <p class="card-text">Event Management Coordinator</p>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-envelope-fill"></i>
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+              </div>
+            </div>
+         
+          </div>
+          <h2 class="black-heading">Documentation Team</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+            <div class="col">
+              <div class="card">
+                <img src="https://ik.imagekit.io/gxwsgndgi/Enthusiast_Club/Sania.jpg?updatedAt=1692633089510" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sania Nidagundi</h5>
+                  <p class="card-text">Documentation Head</p>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-envelope-fill"></i>
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://ik.imagekit.io/gxwsgndgi/Enthusiast_Club/Sayali.jpg?updatedAt=1692633089027" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sayali Kadam</h5>
+                  <p class="card-text">Documentation Coordinator</p>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-envelope-fill"></i>
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://ik.imagekit.io/gxwsgndgi/Enthusiast_Club/Aahi.jpg?updatedAt=1692633089023" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Aahi Dhar</h5>
+                  <p class="card-text">Documentation Coordinator</p>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-envelope-fill"></i>
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+              </div>
+            </div>
+         
+          </div>
+          <h2 class="black-heading">Department Heads</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+            <div class="col">
+              <div class="card">
+                <img src="https://ik.imagekit.io/gxwsgndgi/Enthusiast_Club/Param.jpg?updatedAt=1692633513178" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Param Kalane</h5>
+                  <p class="card-text">Computer Department Head</p>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-envelope-fill"></i>
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://ik.imagekit.io/gxwsgndgi/Enthusiast_Club/Pratap.jpg?updatedAt=1692633089006" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pratap More</h5>
+                  <p class="card-text">Mechanical Department Head</p>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-envelope-fill"></i>
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://ik.imagekit.io/gxwsgndgi/Enthusiast_Club/Shanteshwari.jpg?updatedAt=1692633091633" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Shanteshwari Majage</h5>
+                  <p class="card-text">Electronics and Telecommunication Department Head</p>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-envelope-fill"></i>
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+              </div>
+            </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <a href="Ex-Commitee.html" class="techy-btn">
+      <span> Our Team 2K21-2K22 </span> 
+    </a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<footer>
+  <div class="row">
+    <div class="col-md-4">
+            <h5>Connect with Us:</h5>
+            <p>
+              📧 Email: enthusiast.club@gmail.com<br>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>Follow Us:</h5>
+            <p>
+              🌐 Website: [Club Website URL]<br>
+              📱 Social Media: <a href="https://instagram.com/enthusiast_club_?igshid=MzRlODBiNWFlZA==">Instagram</a>
+            </p>  
+          </div>
+    
+         <!----> <div class="col-md-4">
+            <h5>Join the Community:</h5>
+            <p>Become a part of our vibrant community and engage in discussions, workshops, and events that fuel your passion</p>
+    
+            <form>
+              <input type="email" placeholder="Enter your email">
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+    
+        </div>
+    
+        <div class="text-center pt-4">
+          &copy; 2023 Enthusiast Club. All rights reserved.
+        </div>
+      </div>
+    </div>
+</footer>
+ 
+    <!--<script>
+      const colors = ['red', 'blue', 'green'];
+    let i = 0;
+    
+    setInterval(() => {
+      document.body.style.backgroundColor = colors[i];
+      i = (i + 1) % colors.length;  
+    }, 1000);
+    </script>-->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
